@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ketab AI - Your AI-powered book knowledge assistant. Ask questions and get instant answers from a vast library of books.">
+    <meta name="keywords" content="Ketab AI, AI assistant, book knowledge, ask questions, instant answers, library of books">
+    <meta name="author" content="Ketab AI Team">
+    <meta name="theme-color" content="#8B0000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Ketab AI">
+    <meta name="application-name" content="Ketab AI">
+    <meta name="msapplication-TileColor" content="#8B0000">
+    <link rel="icon" type="image/png" href="./Ketab_AIimGremovebBG.png">
+    <link rel="apple-touch-icon" href="./Ketab_AIimGremovebBG.png">
+    <link rel="icon" type="image/png" sizes="500x500" href="./Ketab_AIimGremovebBG.png">
+    <link rel="icon" type="image/png" sizes="500x500" href="./Ketab_AIimGremovebBG.png">
+    <link rel="apple-touch-icon" sizes="500x500" href="./Ketab_AIimGremovebBG.png">
+  <title>Ketab AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <div class="input-section">
+    <h1>Ketab AI <i class="fas fa-book"></i></h1>
+    <select id="languageSelect">
+      <option value="en">English</option>
+      <option value="ar">العربية</option>
+    </select>
+    <input type="text" id="questionInput" placeholder="Ask a question ">
+    <button id="submitQuestion"><i class="fa-solid fa-book-open"></i> Get knowledge</button>
+  </div>
+  <div class="dashboard" id="dashboard">
+    <button id="toggleSidebar" class="d-none d-md-none"><i class="fas fa-bars"></i></button>
+    <div class="sidebar" id="sidebar">
+      <h2>Sections</h2>
+      <ul id="sectionList"></ul>
+    </div>
+    <div class="content" id="content">
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="prevSection" disabled><i class="fas fa-arrow-left"></i> Previous</button>
+      <button id="nextSection"><i class="fas fa-arrow-right"></i> Next</button>
+      <button id="exportPDF"><i class="fas fa-file-pdf"></i> Export as PDF</button>
+      <button id="closeDashboard"><i class="fas fa-times"></i> Close</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+</html>
