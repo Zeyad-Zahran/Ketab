@@ -16,9 +16,9 @@
     let sections = [];
     let currentSection = 0;
 
-    const GEMINI_API_KEY = 'AIzaSyBtAVqxOBD_Jk6AxrKEQGnMVkWhcMHNXfc';
+    const GEMINI_API_KEY = 'AIzaSyB7YsXWxDR_gMuJxM_lUnnsTPLigRoZtNo';
     // Error here
-    const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-8b:generateContent';
+    const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-002:generateContent';
 
     const typingSound = new Audio('https://www.freesoundslibrary.com/wp-content/uploads/2021/09/keyboard-typing-sound-1.mp3');
     typingSound.loop = true;
